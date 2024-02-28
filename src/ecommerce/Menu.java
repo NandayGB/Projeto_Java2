@@ -2,13 +2,12 @@ package ecommerce;
 
 
 import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import ecommerce.model.Panelas;
 import ecommerce.controller.Produtocontroller;
 import ecommerce.model.Frigideiras;
-import ecommerce.util.Cores;
+
 
 
 public class Menu {
@@ -98,7 +97,7 @@ public class Menu {
                         tipo = buscaProduto.getTipo();
 
                         System.out.println("Digite o Novo Nome do Produto: ");
-                        leia.nextLine(); // Limpa o buffer do teclado
+                        leia.nextLine(); // 
                         nome = leia.nextLine();
                         System.out.println("Digite o Novo Preço do Produto R$");
                         preco = leia.nextFloat();
